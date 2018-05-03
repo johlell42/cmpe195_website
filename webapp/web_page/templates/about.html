@@ -5,6 +5,33 @@
     <head>
         <style>
          figure{ display:inline-block;}
+         header, footer {
+                padding: 1em;
+                color: white;
+                background-color: black;
+                clear: left;
+                text-align: center;
+            }
+
+        nav {
+            float: left;
+            max-width: 160px;
+            margin: 0;
+            padding: 1em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+
+        article {
+            margin-left: 170px;
+            border-left: 1px solid gray;
+            padding: 1em;
+            overflow: hidden;
+        }
         </style>
     
         <meta charset="utf-8">
@@ -12,45 +39,59 @@
     </head>
 
     <body style="background-color:linen;"">
-        <center><h1>About Team Drawbot...</h1></center> <!--If this doesnt work, it because its in HTML 5, which doesnt support <center> -->
-        <center><a href="/">Go back to main page</a></center>
-        <p>
-            Project DrawBot is our SJSU CmpE Senior Project. The focus of this project is on what we have learned about machine learning, application design, coding, and program construction. 
-        </p>
 
-        <h2>Proud Members of Team DrawBot!</h2>
+        <header>
+        <center><h1>About Team Drawbot...</h1></center> <!--If this doesnt work, it because its in HTML 5, which doesnt support <center> --></header><br>
 
-        <p>
-         
-         <figure>
-         <img src="/static/Dan.jpg" alt="Daniel Man" width="300" height="377">
-         <h4>Daniel Man</h4><br>
-         </figure>
+        <nav>
+            <ul>
+                 <center><a href="/">Home</a></center> <br><br>
+                 <center><a href="/draw/">Drawing Application</a></center> <br><br>
+            </ul>
+        </nav>
 
-         <figure>
-         <img src="/static/Jon.jpg" alt="Jonathan Rojas" width="300" height="377">
-         <h4>Jonathan Rojas</h4><br>
-         </figure>
+        <article>
+            <p>
+                Project DrawBot is our SJSU CmpE Senior Project. The focus of this project is on what we have learned about machine learning, application design, coding, and program construction. 
+            </p>
 
-         <figure>
-         <img src="/static/Ian.jpg" alt="Ian Ramos" width="300" height="377">
-         <h4>Ian Ramos</h4><br>
-         </figure>
-        
-         <figure>
-         <img src="/static/Jeff.jpg" alt="Jeffrey Huynh" width="300" height="377">
-         <h4>Jeffrey Huynh</h4><br>
-         </figure>
+            <h2>Proud Members of Team DrawBot!</h2>
 
-        </p>
+            <p>
+             
+             <figure>
+             <img src="/static/Dan.jpg" alt="Daniel Man" width="300" height="377">
+             <h4>Daniel Man</h4><br>
+             </figure>
 
-        <center>
-        <figure>
-        <h3>And Our advisor, SJSU CmpE Professor Michael Robinson</h6>
-        <img src="/static/Robinson.jpg" alt="Michael Robinson" width="300" height="377">
-        </figure>
-        </center>
+             <figure>
+             <img src="/static/Jon.jpg" alt="Jonathan Rojas" width="300" height="377">
+             <h4>Jonathan Rojas</h4><br>
+             </figure>
 
-        <center><a href="/">Go back to main page</a></center>
+             <figure>
+             <img src="/static/Ian.jpg" alt="Ian Ramos" width="300" height="377">
+             <h4>Ian Ramos</h4><br>
+             </figure>
+            
+             <figure>
+             <img src="/static/Jeff.jpg" alt="Jeffrey Huynh" width="300" height="377">
+             <h4>Jeffrey Huynh</h4><br>
+             </figure>
+
+            </p>
+
+            <center>
+            <figure>
+            <h3>And Our advisor, SJSU CmpE Professor Michael Robinson</h6>
+            <img src="/static/Robinson.jpg" alt="Michael Robinson" width="300" height="377">
+            </figure>
+            </center>
+        </article>
+
+
+        <footer>
+            <center><a href="/">Go back to main page</a></center>
+        </footer>
     </body>
 </html>
