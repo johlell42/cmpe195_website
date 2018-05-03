@@ -1,0 +1,37 @@
+READ ME FOR DRAWBOT WEBSITE - VERISON: 05/02/18
+This is for the latest python 2 as of 05/02/2018 and the latest django
+
+For setting up computer enviroment for python and django
+
+use: https://scotch.io/tutorials/build-your-first-python-and-django-application#when-not-to-use-python
+
+
+Additional help from other sites may be needed to install some parts mentioned in link above
+For HTML coding advices, use this website
+use: https://www.w3schools.com/html/default.asp
+
+For image placing coding, see this youtube video
+use: https://www.youtube.com/watch?v=RhJIMUMJ_Do
+
+use <!-- comment --> to put comments in html. Only works in html <body> sections
+
+
+the folder "assets" contain all static files for use. This defined in /website/webapp/webapp/settings.py at the bottom.
+
+
+The folder "web_page", used here, holds the main html code under /website/webapp/web_page/templates.
+Each page has a html file, and that total is "3" as of when this was written.
+IT IS NESSESARY to modify views.py and urls.py to accommadate additional html files/pages.
+"web_page" is a django app. More can be added on, but each new one made must be declared in setting.py under "INSTALLED_APPS"
+
+
+Background color can be controlled in each file and more details in html link above.
+Experiment to understand more things. Make backup of the project as needed.
+
+Read the first link above to restart site server on console.
+>>(The site must first be in enviroment (env), this is done in the main folder of app, --- website$ source env/bin/activate >>> will have (env) infront of path)<< This is no longer needed if files are created outside of an enviroment
+
+The server must be turned on at webapp --- website/webapp$ python manage.py runserver
+Ctrl-C will turn off server. Chnages can be made as server runs. Just refresh site.
+
+website address is http://127.0.0.1:8000/ --- 127.0.0.1 is local, 8000 is the specific one for the project, once the server is one.
